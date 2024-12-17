@@ -2,7 +2,7 @@
 ## Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models
 
 <p align="center">
-   🤗 <a href="#data" target="_blank">Data</a> • 📃 <a href="https://arxiv.org/abs/" target="_blank">Paper</a>
+   🤗 <a href="#data" target="_blank">Data</a> • 📃 <a href="https://arxiv.org/abs/2412.11605" target="_blank">Paper</a>
 </p>
 
 SPaR focuses on creating interference-free preference pairs for effective self- improvement. An example of the interfering factors (*story content*) in independently sampled multiple responses (Left). Refined response pairs exclude these factors, highlight the key difference (*ending sentence*), and lead to improved performance on iteratively trained LLaMA3-8B-Instruct (Right).
@@ -70,6 +70,15 @@ llamafactory-cli train configs/sft.yaml
 - Training code: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
 - Tree-search implementation: [Rest-MCTS*](https://github.com/THUDM/ReST-MCTS)
 
-<!-- ## Citation
+## Citation
 ```
-``` -->
+@misc{cheng2024sparselfplaytreesearchrefinement,
+      title={SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models}, 
+      author={Jiale Cheng and Xiao Liu and Cunxiang Wang and Xiaotao Gu and Yida Lu and Dan Zhang and Yuxiao Dong and Jie Tang and Hongning Wang and Minlie Huang},
+      year={2024},
+      eprint={2412.11605},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.11605}, 
+}
+```
