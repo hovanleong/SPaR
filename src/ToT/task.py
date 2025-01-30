@@ -4,6 +4,7 @@ from ToT.base import Node
 from models.get_response import *
 from ToT.bfs import BFS
 from ToT.dfs import DFS
+from ToT.a_star import AStar
 from openai import OpenAI
 
 
@@ -100,6 +101,8 @@ class ToT_Task(SearchTask):
             solution, root, final_node = DFS(self)
         elif self.algorithm == 'bfs':
             solution, root, final_node = BFS(self)
+        elif self.algorithm == 'a_star':
+            solution, root, final_node = AStar(self)
         else:
             print('Unsupported algorithm!\n')
             return {}
